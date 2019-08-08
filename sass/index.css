@@ -1,0 +1,119 @@
+header {
+  background: #606368;
+  width: 1378px;
+  margin: 0px;
+  padding: 0px;
+  height: 100px;
+}
+
+.header {
+  vertical-align: center;
+}
+
+.header-text {
+  margin-top: 25px;
+  display: block;
+  font-size: 28px;
+  font-family: "Century Gothic";
+  color: #bdc1c6;
+  line-height: 1.2;
+  text-align: center;
+  position: relative;
+}
+
+.main {
+  color: #B4B8BD;
+}
+
+.main-grid-content {
+  width: 350px;
+  height: 503px;
+  background-color: #3c4042;
+}
+
+.main-grid-title {
+  width: 350px;
+  height: 100px;
+  background-color: #606368;
+  margin-top: 30px;
+  padding-top: 35px;
+}
+
+.main-grid-imput {
+  width: 220px;
+  height: 34px;
+  background-color: #bdc1c6;
+  border: none;
+}
+
+.main-grid-button {
+  cursor: pointer;
+}
+
+.main-grid-button:hover {
+  background: #787c83;
+  transition: 0.5s;
+}
+
+.text {
+  position: relative;
+  margin-bottom: 45px;
+  padding-top: 20px;
+}
+
+.planse {
+  width: 1110px;
+  background-color: #3c4042;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 60px;
+}
+
+.planse-descp__two {
+  margin-left: 25px;
+}
+
+.planse-descp__three {
+  margin-left: 60px;
+}
+
+.planse-item {
+  background-color: #202124;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 45px;
+  text-align: center;
+}
+
+.planse-input {
+  position: relative;
+}
+
+.planse-input__one {
+  width: 601px;
+  margin-left: 50px;
+}
+
+.planse-input__two {
+  margin-left: 30px;
+  text-align: center;
+}
+
+.planse-input__three {
+  position: relative;
+  margin-left: 40px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 28px;
+  font-family: "Century Gothic";
+  color: #bdc1c6;
+  line-height: 1.2;
+  text-align: center;
+  background: #202124;
+}
