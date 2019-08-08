@@ -13,6 +13,15 @@ window.onload = function() {
         // развлечения
         let entertaimentOne =  document.querySelector('#today-three'),
             entertaiment = 0;
+        // планы
+        let plans = document.querySelectorAll('.planse-input__one'),
+            divPlans = document.createElement('input'),
+            planseComplite = document.createElement('input'),
+            planseTime = document.createElement('input'),
+            planseItemOne = document.querySelector('.planse-item__one'),
+            planseItemTwo = document.querySelector('.planse-item__two'),
+            planseItemThree = document.querySelector('.planse-item__three');
+
 
     mainButton[0].addEventListener('click', function(){
         schet+=1;
@@ -32,7 +41,7 @@ window.onload = function() {
             interval+=1;
             if((schet % 2) == 0){
                 clearInterval(setTime);
-            }
+            };
             timer();
             todayOne.value = Math.round((sec / 100)*(-1));
         }, 100);
@@ -41,11 +50,11 @@ window.onload = function() {
             today+=sec;
             function todayOut(){
                 todayOne.value = Math.round((today / 100)*(-1));
-            }
+            };
             console.log(today);
             setTimeout(todayOut,100);
         
-       }
+       };
         
     });
     // mainButton[0]
@@ -61,14 +70,14 @@ window.onload = function() {
                 newTime = new Date();
                 sec = time - newTime;
                 console.log(sec);
-            }  
+            }  ;
         } ;
         // for
         let setTime = setInterval(() => {
             interval+=1;
             if((schet % 2) == 0){
                 clearInterval(setTime);
-            }
+            };
             timer();
             practisOne.value = Math.round((sec / 100)*(-1));
         }, 100);
@@ -77,7 +86,7 @@ window.onload = function() {
             practis+=sec;
             function practisOut(){
                 practisOne.value = Math.round((practis/ 100)*(-1));
-            }
+            };
             console.log(practisOne);
             setTimeout(practisOut,100);
         
@@ -97,14 +106,14 @@ window.onload = function() {
                 newTime = new Date();
                 sec = time - newTime;
                 console.log(sec);
-            }  
+            };  
         } ;
         // for
         let setTime = setInterval(() => {
             interval+=1;
             if((schet % 2) == 0){
                 clearInterval(setTime);
-            }
+            };
             timer();
             entertaimentOne.value = Math.round((sec / 100)*(-1));
         }, 100);
@@ -113,13 +122,26 @@ window.onload = function() {
             entertaiment+=sec;
             function entertaimentOut(){
                 entertaimentOne.value = Math.round((entertaiment/ 100)*(-1));
-            }
-            console.log(entertaimentOne);
+            };
+            // console.log(entertaimentOne);
             setTimeout(entertaimentOut,100);
-        
+            plans();
        };
+
+    //    Логика планов
+    function plans(){
+        divPlans.className = "planse-item planse-input__one";
+        planseComplite.className = "planse-item planse-input__two";
+        planseTime.className = "planse-item planse-input__three";
+
+        planseItemOne.appendChild(divPlans);
+        planseItemTwo.appendChild(planseComplite);
+        planseItemThree.appendChild(planseTime);
+
+
+    };
         
     });
     // mainButton[2]
 
-}
+};

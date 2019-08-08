@@ -101,6 +101,10 @@ header {
 .planse-input__one {
   width: 601px;
   margin-left: 50px;
+  font-size: 28px;
+  font-family: "Century Gothic";
+  color: #bdc1c6;
+  line-height: 1.2;
 }
 
 .planse-input__two {
@@ -111,6 +115,12 @@ header {
 .planse-input__three {
   position: relative;
   margin-left: 40px;
+  cursor: pointer;
+  font-size: 28px;
+  font-family: "Century Gothic";
+  color: #bdc1c6;
+  line-height: 1.2;
+  width: 170px;
 }
 
 body {
